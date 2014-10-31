@@ -15,5 +15,6 @@ for login in logins:
     call(["mkdir", "submission/" + login])
     call(["mv", "proj1_1A.txt", "submission/" + login])
     call(["mv", "MY.PARTNERS", "submission/" + login])
+roster.close()
 #compress submission
 # call(["tar", "zcvf", "archive.tar.gz", "submission/"])
