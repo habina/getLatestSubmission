@@ -14,7 +14,11 @@ for info in logins:
         pair_login = line.split()
         out = ""
         for name in pair_login:
-            out += name + " place_holder " + data[2] + "\n"
+            string = ""
+            for i in range(2, len(data)):
+                string += data[i] + " "
+            out += name + " place_holder " + string + "\n"
+
         output.write(out)
 roster.close()
 output.close()

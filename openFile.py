@@ -4,5 +4,5 @@ from os.path import isfile, join
 mypath = "./submission"
 for f in listdir(mypath):
     print(f)
-    path = mypath + "/" + f + "/MY.PARTNERS"
+    path = mypath + "/" + f + "/proj1_1A.txt"
     call(["sublime", path])
